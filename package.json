@@ -1,4 +1,4 @@
-
+{
   "name": "proxy-openai-make",
   "version": "1.0.0",
   "description": "Serveur proxy pour accéder à l'API OpenAI avec une clé sk-proj-... depuis Make",
