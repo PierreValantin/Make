@@ -3,7 +3,7 @@ const cors = require("cors");
 const { OpenAI } = require("openai");
 
 const app = express();
-const port = process.env.PORT; // 👈 corrigé ici
+const port = process.env.PORT;
 
 app.use(cors());
 app.use(express.json());
@@ -37,3 +37,5 @@ app.post("/gpt", async (req, res) => {
 app.listen(port, () => {
   console.log(`🚀 Proxy GPT lancé sur le port ${port}`);
 });
+Correction du port forcé pour Render
+
