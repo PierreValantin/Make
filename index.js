@@ -12,8 +12,8 @@ app.use(express.json());
 
 // Créer client OpenAI avec clé + ID projet
 const openai = new OpenAI({
-  apiKey: process.env.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,
-  project: process.env.proj_joBuvSIkQCK2wqLl4ALQxXGX,
+  apiKey: process.env.OPENAI_API_KEY,
+  project: process.env.OPENAI_PROJECT_ID,
 });
 
 // Test GET pour Render
