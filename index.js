@@ -3,10 +3,12 @@ const cors = require("cors");
 const { OpenAI } = require("openai");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT; // ✅ pas de valeur par défaut ici
 
 app.use(cors());
 app.use(express.json());
+
+
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
