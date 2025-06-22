@@ -37,5 +37,3 @@ app.post("/gpt", async (req, res) => {
 app.listen(port, () => {
   console.log(`🚀 Proxy GPT lancé sur le port ${port}`);
 });
-Correction du port forcé pour Render
-
